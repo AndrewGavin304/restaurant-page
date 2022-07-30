@@ -1,0 +1,39 @@
+@import "normalize/import-now";
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+.content {
+    position: relative;
+}
+
+.background-container {
+    display: flex; 
+    width: 100vw;
+    height: 100vh;
+
+    &__img {
+        background-size: cover;
+        flex-grow: 1;
+        opacity: .75;
+        background-position: center;
+    }
+    &__img-1 {
+        background-image: url(/src/images/homepage1.jpg);
+    }
+    &__img-2 {
+        background-image: url(/src/images/homepage2.jpg);
+    }
+    &__img-3 {
+        background-image: url(/src/images/homepage3.jpg);
+    }
+}
+
+.name-container_homepage {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 5vw;
+    font-family: 'WindSong', cursive;
+}
