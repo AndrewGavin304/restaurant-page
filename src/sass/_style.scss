@@ -5,11 +5,18 @@
 
 @mixin flex-overlay {
     display: flex;
-    width: 100vw;
-    position: absolute;
+    position: fixed;
     justify-content: center;
     align-items: center;
     z-index: 9;
+}
+
+@mixin center {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .content {
@@ -42,6 +49,7 @@
 
 .restaurant-name-container {
     @include flex-overlay;
+    width: 100vw;
     top: 10vh;
     color: $white;
     font-size: 5vw;
@@ -50,6 +58,7 @@
 
 .navbar-container {
     @include flex-overlay;
+    width: 100vw;
     top: 0;
     height: 5vh;
     gap: 4vw;
@@ -58,7 +67,7 @@
         border: none;
         background: none;
         color: $white;
-        font-size: 1.3vw;
+        font-size: clamp(1.5rem, 1.3vw, 2rem);
         font-family: 'Raleway', sans-serif;
     }
 }
@@ -66,9 +75,23 @@
 .footer-container {
     @include flex-overlay;
     bottom: 0px;
+    width: 100vw;
     height: 3vh;
     border-top: 1px solid $platinum;
     background-color: $gunmetal;
     color: white;
     font-family: 'Raleway', sans-serif;
+}
+
+.contact-container {
+    @include flex-overlay;
+    @include center;
+    flex-direction: column;
+    width: clamp(15rem, 20vw, 40rem);
+    height: 70vh;
+    background-color: rgba($gunmetal, .96);
+    border-radius: 2px;
+    // border: 1px solid $satin-sheen-gold;
+    // box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    box-shadow: rgba($platinum, 0.7) 0px 0px 0px 2px;
 }
