@@ -1,8 +1,21 @@
+@import "./variables";
 @import "normalize/import-now";
 @import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@mixin flex-overlay {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
 
 .content {
     position: relative;
+    width: 100vw;
+    height: 100vh;
 }
 
 .background-container {
@@ -13,7 +26,7 @@
     &__img {
         background-size: cover;
         flex-grow: 1;
-        opacity: .75;
+        opacity: .8;
         background-position: center;
     }
     &__img-1 {
@@ -27,13 +40,35 @@
     }
 }
 
-.name-container_homepage {
-    display: flex;
-    width: 100vw;
-    position: absolute;
+.restaurant-name-container {
+    @include flex-overlay;
     top: 10vh;
-    justify-content: center;
-    color: whitesmoke;
+    color: $white;
     font-size: 5vw;
     font-family: 'WindSong', cursive;
+}
+
+.navbar-container {
+    @include flex-overlay;
+    top: 0;
+    height: 5vh;
+    gap: 4vw;
+
+    &__button{
+        border: none;
+        background: none;
+        color: $white;
+        font-size: 1.3vw;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+.footer-container {
+    @include flex-overlay;
+    bottom: 0px;
+    height: 3vh;
+    border-top: 1px solid $platinum;
+    background-color: $gunmetal;
+    color: white;
+    font-family: 'Raleway', sans-serif;
 }
