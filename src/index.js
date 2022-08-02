@@ -27,5 +27,4 @@ navbar.addEventListener('click', (event) => {
   if (event.target.id === 'navbar-container__button_about') {
     clear();
   }
-
 })
