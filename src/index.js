@@ -6,25 +6,25 @@ import { contact } from './modules/contact';
 
 initialize();
 
-const navbar = document.getElementById("navbar-container");
+const background = document.getElementById("background-container");
 const content = document.getElementById("content");
 
-navbar.addEventListener('click', (event) => {
-  if (event.target.id === 'navbar-container__button_home') {
+background.addEventListener('click', (event) => {
+  if (event.target.id === 'background-container__button_home') {
     clear();
-    content.appendChild(home());
+    // content.appendChild(home());
   }
 
-  if (event.target.id === 'navbar-container__button_menu') {
+  if (event.target.id === 'background-container__img-1') {
     clear();
   }
 
-  if (event.target.id === 'navbar-container__button_contact') {
+  if (event.target.id === 'background-container__img-2') {
+    clear();
+  }
+
+  if (event.target.id === 'background-container__img-3') {
     clear();
     content.appendChild(contact())
-  }
-
-  if (event.target.id === 'navbar-container__button_about') {
-    clear();
   }
 })

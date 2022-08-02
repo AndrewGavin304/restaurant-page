@@ -12,7 +12,7 @@ export const navbar = () => {
     navbarContainer.appendChild(menuButton);
   }
 
-  createMenuButton("home");
+  createMenuButton("about");
   createMenuButton("menu");
   createMenuButton("contact");
 

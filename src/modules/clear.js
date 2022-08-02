@@ -1,5 +1,4 @@
 export const clear = () => {
-  removeContainer("home-container");
   removeContainer("contact-container");
   removeContainer("about-container");
   removeContainer("menu-container");
