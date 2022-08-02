@@ -15,7 +15,6 @@ export const navbar = () => {
   createMenuButton("home");
   createMenuButton("menu");
   createMenuButton("contact");
-  createMenuButton("about");
 
   return navbarContainer;
 }

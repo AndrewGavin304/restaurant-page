@@ -11,9 +11,9 @@ content.appendChild(navbar());
 
 const backgroundContainer = basicContainer("background")
 
-backgroundContainer.appendChild(backgroundImg(1));
-backgroundContainer.appendChild(backgroundImg(2));
-backgroundContainer.appendChild(backgroundImg(3));
+backgroundContainer.appendChild(backgroundImg(1, "Home"));
+backgroundContainer.appendChild(backgroundImg(2, "Menu"));
+backgroundContainer.appendChild(backgroundImg(3, "Contact"));
 content.appendChild(backgroundContainer);
 
 content.appendChild(home());
