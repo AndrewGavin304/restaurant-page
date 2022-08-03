@@ -13,7 +13,7 @@ export const createCard = (object, classname) => {
 
     else {
       const span = document.createElement("span");
-      span.classList.add(`${classname}__${key}`);
+      span.classList.add(`${classname}__${key}`, "span");
       span.textContent = value;
       cardContainer.appendChild(span)
     }
