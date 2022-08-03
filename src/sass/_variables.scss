@@ -3,3 +3,7 @@ $gunmetal: #242f40ff;
 $satin-sheen-gold: #cca43bff;
 $platinum: #e5e5e5ff;
 $white: #ffffffff;
+$jet-light: lighten($jet, 30);
+$gunmetal-light: lighten($gunmetal, 30);
+$satin-sheen-gold-light: lighten($satin-sheen-gold, 30);
+$satin-sheen-gold-ultralight: lighten($satin-sheen-gold, 40);

@@ -116,7 +116,8 @@ body {
         font-size: 4rem;
         padding-right: 8px;
         font-family: 'Raleway', sans-serif;
-        color: rgba($platinum, .5)
+        color: rgba($platinum, .5);
+        pointer-events: none;
     }
 }
 
@@ -187,14 +188,15 @@ body {
     align-items: center;
     justify-items: center;
     font-size: 20px;
-    background-color: lighten($jet, 8);
+    background-color: $platinum;
+    border: 1px solid $jet-light;
     padding: 1rem;
     border-radius: 2px;
     transition: background-color 0.5s ease;
     width: 100%;
 
     &:hover {
-        background-color: $jet;
+        background-color: $satin-sheen-gold-ultralight;
     }
 
     &__img {
@@ -207,13 +209,13 @@ body {
     }
 
     .span{
-        padding: .3rem 0rem;
-        &:not(.contact-card__name) {
-            color: $platinum;
-        }
+        padding: .4rem 0rem;
+        color: $jet;
+        
     }
 
     .contact-card__name {
-        color: $satin-sheen-gold;
+        font-weight: bold;
+        
     }
 }
