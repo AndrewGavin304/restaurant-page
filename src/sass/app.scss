@@ -1,7 +1,7 @@
-@import "./variables";
-@import "normalize/import-now";
 @import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import "variables.scss";
+@import "./core/normalize/import-now";
 
 @mixin flex-overlay {
     display: flex;
@@ -63,7 +63,7 @@ body {
     height: 100vh;
 }
 
-.background-container {
+.hero-container {
     display: flex; 
     width: 100vw;
     height: 100vh;

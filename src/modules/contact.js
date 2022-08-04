@@ -24,7 +24,6 @@ export const contact = () => {
   const contactContainer = basicContainer("contact");
 
   const contactHeader = document.createElement("span");
-  contactHeader.classList.add("fff")
 
   contactContainer.appendChild(createCard(reception, `contact-card`));
   contactContainer.appendChild(createCard(owner, `contact-card`));
