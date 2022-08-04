@@ -1,40 +1,55 @@
 import { basicContainer } from "./basic-container";
 import { createCard } from "./createCard";
-import carbonaraImg from "../images/food/carbonara.jpg";
-import chickenAlfredoImg from "../images/food/chicken-alfredo.jpg";
-import lasagneImg from "../images/food/lasagne.jpg";
-import margheritaImg from "../images/food/margherita-pizza.jpg";
-import mushroomRisottoImg from "../images/food/mushroom-risotto.jpg";
-import pepperoniPizzaImg from "../images/food/pepperoni-pizza.jpg";
-import pestoChickenImg from "../images/food/pesto-chicken-pasta.jpg";
-import ravioliImg from "../images/food/ravioli.jpg";
-import spaghettiImg from "../images/food/spaghetti-w-meatballs.jpg";
+import { horizontalDivider } from "./horizontalDivider";
+// import carbonaraImg from "../images/food/carbonara.jpg";
+// import chickenAlfredoImg from "../images/food/chicken-alfredo.jpg";
+// import lasagneImg from "../images/food/lasagne.jpg";
+// import margheritaImg from "../images/food/margherita-pizza.jpg";
+// import mushroomRisottoImg from "../images/food/mushroom-risotto.jpg";
+// import pepperoniPizzaImg from "../images/food/pepperoni-pizza.jpg";
+// import pestoChickenImg from "../images/food/pesto-chicken-pasta.jpg";
+// import ravioliImg from "../images/food/ravioli.jpg";
+// import spaghettiImg from "../images/food/spaghetti-w-meatballs.jpg";
+
+// class menuObject {
+//   constructor(name, price, img, description) {
+//     this.img = img,
+//     this.name = name,
+//     this.price = price,
+//     this.description = description
+//   }
+// }
 
 class menuObject {
-  constructor(itemName, price, img, description) {
-    this.img = img,
-    this.itemName = itemName,
-    this.price = price,
-    this.description = description
+  constructor(name, price, description) {
+    this.name = name,
+    this.description = description,
+    this.price = price
   }
 }
 
-let lasagne = new menuObject("Lasagne Bolognese", "16", lasagneImg, "A traditionally rich lasagne, baked in single servings");
-let chickenAlfredo = new menuObject("Chicken Alfredo", "14", chickenAlfredoImg, "A chicken alfredo, made with a sauce of cream, butter, and parmesan");
-let spaghetti = new menuObject("Spaghetti with Meatballs", "16", spaghettiImg, "Spaghetti with savory meatballs, topped with our marinara");
-let carbonara = new menuObject("Carbonara", "15", carbonaraImg, "Cured pork, pecorino romano, eggs, and black pepper combine in this classic fare");
-let mushroomRisotto = new menuObject("Mushroom Risotto", "18", mushroomRisottoImg, "Arborio rice, mushrooms, and from-scratch-broth, reduced to perfection");
-let pestoChicken = new menuObject("Pesto Chicken Pasta", "16", pestoChickenImg, "In-house pesto and succulent chicken, over a bed of pasta, with a touch of parmesan");
-let ravioli = new menuObject("Ravioli", "14", ravioliImg, "Ravioli stuffed with mozarella and parmesan, topped with our light vodka sauce");
-let margherita = new menuObject("Margherita Pizza", "16", margheritaImg, "Traditional margherita pizza with basil and mozarella");
-let pepperoniPizza = new menuObject("Pepperoni Pizza", "17", pepperoniPizzaImg, "A crowd-pleasing pepperoni pizza with mozarella and a lightly spiced marinara");
+let lasagne = new menuObject("Lasagne Bolognese", "16", "\u00a0");
+let spaghetti = new menuObject("Spaghetti with Meatballs", "16", "Meatballs made with beef, veal, and lamb");
+let chickenAlfredo = new menuObject("Chicken Alfredo", "14", "\u00a0");
+let carbonara = new menuObject("Carbonara", "15", "Cured pork, pecorino romano, eggs, and black pepper");
+let mushroomRisotto = new menuObject("Mushroom Risotto", "18", "\u00a0");
+let pestoChicken = new menuObject("Pesto Chicken Pasta", "16", "\u00a0");
+let ravioli = new menuObject("Ravioli", "14", "Stuffed with mozzarella and parmesan, topped with vodka sauce");
+let margherita = new menuObject("Margherita Pizza", "16", "\u00a0");
+let pepperoniPizza = new menuObject("Pepperoni Pizza", "17", "\u00a0");
+let tiramisu = new menuObject("Tiramisu", "8", "\u00a0");
+let canestrelli = new menuObject("Canestrelli", "4", "Egg yolk cookies")
+let cannoli = new menuObject("Cannoli", "12", "Comes in pairs")
 
 let menuArray = [];
 menuArray.push(lasagne, chickenAlfredo, spaghetti, carbonara, mushroomRisotto, pestoChicken, ravioli, margherita, pepperoniPizza);
+menuArray.push(tiramisu, canestrelli, cannoli)
 
 
 export const menu = () => {
   const menuContainer = basicContainer("menu");
+
+  content.appendChild(horizontalDivider());
 
   menuArray.forEach((e) => {
     const menuItem = createCard(e, "menu-card");

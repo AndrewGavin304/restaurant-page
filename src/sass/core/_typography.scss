@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -7,14 +9,16 @@ body {
 
 .hero-container__text {
     font-size: 4rem;
-    font-family: 'Raleway', sans-serif;
     color: rgba($platinum, .5);
 }
 
 .contact-card {
     font-size: 1.25rem;
+    color: $jet;
 
     &__name {
+        font-size: 1.75rem;
+        color: $gunmetal;
         font-weight: bold;
     }
 }
@@ -23,4 +27,14 @@ body {
     color: $platinum;
     font-size: 5vw;
     font-family: 'WindSong', cursive;
+}
+
+.footer-container {
+    color: $platinum;
+    font-weight: 200;
+}
+
+.menu-container {
+    color: $platinum;
+    font-family: 'Karla', sans-serif;
 }

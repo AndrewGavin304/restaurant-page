@@ -1,0 +1,44 @@
+.menu-container {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    background-color: $gunmetal;
+    margin: 0px 4rem 4rem 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 200px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-card {
+    display: flex;
+    flex-wrap: wrap;
+    color: $platinum;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.25rem;
+
+    &__name {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    &__price {
+        margin-left: auto;
+        font-weight: 400;
+        font-size: 1.15rem;
+    }
+
+    &__description {
+        font-weight: 300;
+    }
+
+    &:not(:last-child):after {
+        content: ""; /* This is necessary for the pseudo element to work. */ 
+        margin: 0 auto; /* This will center the border. */
+        border-bottom: 1px solid rgba($platinum, .2); /* This creates the border. Replace black with whatever color you want. */
+        flex-basis: 100%
+    }
+}

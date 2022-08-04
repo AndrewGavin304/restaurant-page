@@ -39,3 +39,11 @@
     align-items: center;
     z-index: 9;
 }
+
+@mixin grid-container-default {
+    display: grid;
+    padding: 0 5vw 3vw 5vw;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+}

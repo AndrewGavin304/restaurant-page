@@ -1,5 +1,6 @@
 import { basicContainer } from "./basic-container";
 import { createCard } from "./createCard";
+import { horizontalDivider } from "./horizontalDivider";
 import receptionImg from "../images/reception.jpg";
 import managerImg from "../images/manager.jpg";
 import chefImg from "../images/chef.jpg";
@@ -15,7 +16,7 @@ class contactObject {
   }
 }
 
-let reception = new contactObject("Reception Desk", "!!hideme!!", "1-334-359-0677", "FiamataInquiries@gmail.com", receptionImg)
+let reception = new contactObject("Reception Desk", "\u00a0", "1-334-359-0677", "FiamataInquiries@gmail.com", receptionImg)
 let owner = new contactObject("Anselmo Endrizzi", "Owner", "1-458-238-3927", "EndrizziFiamata@gmail.com", ownerImg)
 let manager = new contactObject("Luciana Scutari", "Manager", "1-669-985-3966", "ScutariWay@gmail.com", managerImg)
 let chef = new contactObject("Nico Lombardo", "Chef", "1-566-711-6236", "LombaroCreations@gmail.com", chefImg)
@@ -23,7 +24,7 @@ let chef = new contactObject("Nico Lombardo", "Chef", "1-566-711-6236", "Lombaro
 export const contact = () => {
   const contactContainer = basicContainer("contact");
 
-  const contactHeader = document.createElement("span");
+  content.appendChild(horizontalDivider());
 
   contactContainer.appendChild(createCard(reception, `contact-card`));
   contactContainer.appendChild(createCard(owner, `contact-card`));

@@ -2,6 +2,7 @@ export const clear = () => {
   removeContainer("contact-container");
   removeContainer("about-container");
   removeContainer("menu-container");
+  removeContainer("horizontal-divider");
 }
 
 const removeContainer = (name) => {
