@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.hero-container__text {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    color: rgba($platinum, .5);
+}
+
+.contact-card {
+    font-size: 1.25rem;
+
+    &__name {
+        font-weight: bold;
+    }
+}
+
+.restaurant-name-container {
+    color: $platinum;
+    font-size: 5vw;
+    font-family: 'WindSong', cursive;
+}

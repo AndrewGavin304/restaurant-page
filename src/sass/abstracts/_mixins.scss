@@ -1,0 +1,41 @@
+@mixin center {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin grow {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1)
+    }
+}
+
+@mixin transitionOpacity {
+    &:before {
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        transition: opacity 0.5s linear;
+        opacity: 0;
+    }
+    &:hover::before{
+        opacity: 1;
+    }
+}
+
+@mixin flex-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}

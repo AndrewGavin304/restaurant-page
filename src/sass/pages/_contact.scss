@@ -1,0 +1,44 @@
+.contact-container {
+    display: grid;
+    padding: 1rem 5vw 3vw 5vw;
+    height: auto;
+    background-color: $platinum;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 5rem;
+    row-gap: 3rem;
+    align-items: center;
+    justify-items: center;
+    border-top: 2px solid $gunmetal;
+    margin-top: 2px; 
+}
+
+.contact-card {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    background-color: $platinum;
+    border: 1px solid $jet-light;
+    padding: 1rem;
+    border-radius: 2px;
+    transition: background-color 0.5s ease;
+    width: 100%;
+
+    &:hover {
+        background-color: $satin-sheen-gold-ultralight;
+    }
+
+    &__img {
+        grid-row: 1/5;
+        object-fit: cover;
+        width: clamp(12rem, 20vw, 20vw);
+        height: clamp(12rem, 20vw, 20vw);
+        border-radius: 2px;
+    }
+
+    .span{
+        padding: .4rem 0rem;
+        color: $jet;
+    }
+}
