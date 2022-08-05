@@ -1,5 +1,7 @@
 # Fiamata Restaurant - The Odin Project Assignment
 
+https://andrewgavin304.github.io/restaurant-page/
+
 ## Website created with the following restrictions:
 1. Skeleton index.html with minimal content
 2. Site is all one page - should never leave homepage URL
