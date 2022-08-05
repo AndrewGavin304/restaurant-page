@@ -11,7 +11,6 @@ const content = document.getElementById("content");
 
 hero.addEventListener('click', (event) => {
   if (event.target.id === 'hero-container__img-1') {
-    clear();
   }
 
   if (event.target.id === 'hero-container__img-2') {
