@@ -12,7 +12,7 @@ https://andrewgavin304.github.io/restaurant-page/
 2. Responsive design
 3. Mobile compatible with no significant issues
 4. Heavily utilize webpack
-5. Clean, DRY, and modular CSS and JS
+5. Clean, DRY, and modular SASS and JS
 
 ### Notes:
 Menu section is minimal (no images) for mobile compatibility, flexibility in a real-world environment (menu changes), and an industry trend in this direction (perhaps for those reasons)
