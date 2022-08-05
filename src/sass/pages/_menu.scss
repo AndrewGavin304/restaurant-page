@@ -13,12 +13,13 @@
 }
 
 .menu-card {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     color: $platinum;
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 1rem;
     align-items: center;
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 0rem 1.25rem;
+    grid-template-columns: fit-content(23rem) auto fit-content(3rem);
 
     &__name {
         font-weight: 700;
@@ -38,7 +39,12 @@
     &:not(:last-child):after {
         content: ""; /* This is necessary for the pseudo element to work. */ 
         margin: 0 auto; /* This will center the border. */
-        border-bottom: 1px solid rgba($platinum, .2); /* This creates the border. Replace black with whatever color you want. */
-        flex-basis: 100%
+        border-top: 1px solid rgba($platinum, .05); /* This creates the border. Replace black with whatever color you want. */
+        width: 75%;
+        grid-column: 1 / -1;
+    }
+
+    &:last-child {
+        padding: 1.25rem;
     }
 }

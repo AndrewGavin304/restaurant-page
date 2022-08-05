@@ -29,7 +29,7 @@ class menuObject {
 }
 
 let lasagne = new menuObject("Lasagne Bolognese", "16", "\u00a0");
-let spaghetti = new menuObject("Spaghetti with Meatballs", "16", "Meatballs made with beef, veal, and lamb");
+let spaghetti = new menuObject("Spaghetti /w Meatballs", "16", "Meatballs made with beef, veal, and lamb");
 let chickenAlfredo = new menuObject("Chicken Alfredo", "14", "\u00a0");
 let carbonara = new menuObject("Carbonara", "15", "Cured pork, pecorino romano, eggs, and black pepper");
 let mushroomRisotto = new menuObject("Mushroom Risotto", "18", "\u00a0");
