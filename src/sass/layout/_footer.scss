@@ -7,5 +7,7 @@
     border-top: 1px solid $platinum;
     background-color: $gunmetal;
 
-    
+    &__span {
+        @include center;
+    }
 }
