@@ -14,7 +14,7 @@ https://andrewgavin304.github.io/restaurant-page/
 4. Heavily utilize webpack
 5. Clean, DRY, and modular CSS and JS
 
-Notes:
+### Notes:
 Menu section is minimal (no images) for mobile compatibility, flexibility in a real-world environment (menu changes), and an industry trend in this direction (perhaps for those reasons)
 
 All images from [Unsplash](https://unsplash.com/), thanks to:
