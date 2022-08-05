@@ -10,7 +10,7 @@ export const heroImg = (num, text) => {
 
   if (num === 1) {
     const a = document.createElement('a');
-    a.setAttribute('href', "https://github.com/AndrewGavin304/restaurant-page");
+    a.setAttribute('href', "https://github.com/AndrewGavin304/restaurant-page/blob/main/README.md");
     a.setAttribute('target', "_blank");
     a.appendChild(imgContainer);
     return a;
